@@ -1,0 +1,149 @@
+
+#fondo{
+	padding-top: 0.5em;
+    background-color: #f2f2f2;
+	font-family: 'Raleway', sans-serif;
+}
+
+.escapada img {
+	
+	width: 20em;
+	height: 20em;
+	margin: 0.5em;
+}
+
+h2{
+	font-size: 1.5em;
+	text-align: left;
+	margin: 1em 1em;
+}
+.escapada h3 {
+    font-size: 1.3em;
+}
+.escapada p{
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+.contenedor-tarjeta {
+    max-width: 120em;
+    width: 95%;
+    margin: 0 auto;
+	margin-top: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+}
+.escapada{
+	background-color: grey;
+	width: 33%;
+	
+	margin-bottom: 0.5em;
+
+
+}
+.escapada a {
+    display: inline-block;
+    background-color: #eb3508;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#pie{
+    background-color: rgb(77, 77, 77);
+    color: #f2f2f2;
+    text-align: center;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+}
+.grid-pie{
+    display: flex; 
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+    display: block;
+}
+#Right{
+    margin-top: 0.3em;
+}
+.links{
+    margin-top: 0.5em;
+}
+.links a{
+    color: #f2f2f2;
+    margin: 0 0.4em;
+}
+
+/*para que sea adaptable a otras pantallas*/
+@media screen and (max-width:64em){ 
+
+	.encabezado{
+		width: 100%;
+		overflow: hidden;
+	}
+	.flex-item{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.navbar{
+		width: 100%;
+		/*max-height: 0;*/
+		overflow: hidden;
+
+	}
+	.navbar ul{
+		flex-direction: column;
+		align-items: center;
+		/*padding: 2em*/
+		
+	}
+    .grid-pie{
+        flex-direction: column;
+		align-items: center;
+    }
+ }
+
+ .contenedor {
+    max-width: 120em;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+@media (min-width:48em) {
+
+	.contenedor-tarjeta {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .escapada {
+        flex-basis: calc(33.3% - 1rem);
+        /*calc() hace un cálculo matemático*/
+        /*Ocupa el 33% del contenedor - 1 rem para dar espacio entre columnas*/
+    }
+
+    .column-drop-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .contenido-principal,
+    .primera {
+        flex-basis: calc(50% - 1em);
+    }
+}
+
+@media (min-width:768px) {
+    .contenido-principal,
+    .primera,
+    .segunda {
+        flex-basis: calc(33.3% - 2em);
+    }
+}

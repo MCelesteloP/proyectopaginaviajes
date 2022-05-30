@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+
+/*
+@font-face {
+    font-family: ;
+    src: url();
+}
+*/
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	
+}
+/*
+.html{
+    font-size: 62.5%; porque 0.625*16px da 10px
+	por defecto 16px equivale a 1rem
+}*/
+
+.encabezado{
+    background-color: rgb(98, 94, 102);
+    height: 8vh;
+    margin-bottom: 1em;
+	display: flex; 
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+	align-items: center;
+}
+.flex-item{
+	font-size: 1em;
+	color: rgb(194, 199, 199);
+	display: block;
+	text-decoration: none;
+	list-style-type: none; 
+	margin: 0 auto; 
+	padding: 0 1em;
+	flex:1 0 auto;
+ 	text-align: center;
+}
+.flex-item a{
+	display: block;
+	text-decoration: none;
+	color: rgb(194, 199, 199);
+}
+
+.flex-item:hover{
+	color:hsl(22, 100%, 51%);
+}
+.flex-item a:hover{
+	color:hsl(22, 100%, 51%);
+}
+
+.logito{			
+	max-width: 75em;
+	margin:0 auto; 
+	padding: 0 1em;
+	align-items: center;
+}
+
+img{
+       height: 10vh;
+
+}
+header{
+    background-color: white;
+}
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+/*flex navegador*/
+.menu{
+	margin-top: 1em;
+	display: flex; 
+ 	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+    background-color: rgb(117, 42, 187);
+
+
+}
+.navbar ul{
+	list-style-type: none; 
+	padding: 0;
+	margin:0;
+	display: flex;
+	
+}
+.navbar li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .6em 1em;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar li a:hover {
+	background: hsl(278, 75%, 60%);
+}
+ 
+
+/*Para que no me quede espacio entre botones*/
+ .navbar li{
+ 	flex:1 0 auto;
+ 	text-align: center;
+	/*margin:0 auto; 
+	padding: 0 1em;*/
+
+ }
+
+ /*Animaciones*/
+ .animacion-construccion{
+     margin: 2em;
+
+
+ }
+  
+.animacion-construccion h2{
+	margin-top: 2em;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: purple;
+}
+
+/*flex de pie de pagina*/
+ #pie{
+    background-color: rgb(77, 77, 77);
+    color: #f2f2f2;
+    text-align: center;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+}
+.grid-pie{
+    display: flex; 
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+    display: block;
+}
+#Right{
+    margin-top: 0.3em;
+}
+.links{
+    margin-top: 0.5em;
+}
+.links a{
+    color: #f2f2f2;
+    margin: 0 0.4em;
+}
+
+/*Responsive: para que sea adaptable a otras pantallas*/
+ @media screen and (max-width:64em){ 
+
+	.encabezado{
+		width: 100%;
+		overflow: hidden;
+	}
+	.flex-item{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.navbar{
+		width: 100%;
+		/*max-height: 0;*/
+		overflow: hidden;
+
+	}
+	.navbar ul{
+		flex-direction: column;
+		align-items: center;
+		/*padding: 2em*/
+		
+	}
+ }
